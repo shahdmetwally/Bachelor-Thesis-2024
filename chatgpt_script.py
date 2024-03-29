@@ -58,17 +58,18 @@ def process_files(file_paths, prompt_styles):
 def main():
     # Lists of file paths for Singleton and Observer design patterns
     singleton_files = [
+        'DesignPatterns/Singleton/Assert.java',
         'DesignPatterns/Singleton/Clipboard.java',
         'DesignPatterns/Singleton/CodeGenerator.java',
         'DesignPatterns/Singleton/Debug.java',
-        'DesignPatterns/Singleton/EditorActionManager.java',
         'DesignPatterns/Singleton/HTMLComponentFactory.java',
         'DesignPatterns/Singleton/IconKit.java',
         'DesignPatterns/Singleton/IconManager.java',
         'DesignPatterns/Singleton/NullWritable.java',
-        'DesignPatterns/Singleton/Registry.java',
+        'DesignPatterns/Singleton/PackageListFilter.java',
         'DesignPatterns/Singleton/ReloaderSingleton.java',
-        'DesignPatterns/Singleton/UndoStack.java'
+        'DesignPatterns/Singleton/UndoStack.java',
+        'DesignPatterns/Singleton/Version.java'
     ]
     observer_files = [
         'DesignPatterns/Observer/ASTModel.java',
