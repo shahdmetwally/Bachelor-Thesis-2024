@@ -32,7 +32,7 @@ def get_chat_response(prompt):
         return None
 
 def send_prompts(prompts):
-    with open('responses.csv', mode='w', newline='', encoding='utf-8') as file:
+    with open('/Data/chatgpt/responses.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(['Prompt', 'Response']) #column titles
         for prompt in prompts:
