@@ -21,7 +21,8 @@ def get_chat_response(prompt):
         ]
     }
 
-    response = requests.post(endpoint, headers=headers, json=data)
+    with requests.Session() as session:
+        response = session.post(endpoint, headers=headers, json=data)
 
     if response.status_code == 200:
         response_data = response.json()
@@ -82,7 +83,7 @@ def main():
         'DesignPatterns/Observer/TestResult.java',
         'DesignPatterns/Observer/TestSuite.java',
         'DesignPatterns/Observer/TextModel.java',
-        'DesignPatterns/Observer/ViewerModel.java'
+        'DesignPatterns/Observer/ViewerModel.java' 
     ]
     singleton_prompts = [
         # Context Manager Prompt Style
